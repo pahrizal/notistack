@@ -1,7 +1,8 @@
 import React from 'react';
 import clsx from 'clsx';
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles } from '@mui/styles';
 import { SNACKBAR_INDENTS } from './utils/constants';
+// eslint-disable-next-line import/named
 import { SnackbarProviderProps } from '.';
 
 const collapse = {
@@ -13,7 +14,7 @@ const collapse = {
 
 const xsWidthMargin = 16;
 
-const useStyle = makeStyles((theme) => ({
+const useStyle = makeStyles((theme:any) => ({
     root: {
         boxSizing: 'border-box',
         display: 'flex',
@@ -98,6 +99,7 @@ const SnackbarContainer: React.FC<SnackbarContainerProps> = (props) => {
     );
 
     return (
+        // eslint-disable-next-line react/jsx-props-no-spreading
         <div className={combinedClassname} {...other} />
     );
 };

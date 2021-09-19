@@ -1,6 +1,6 @@
 import React, { forwardRef } from 'react';
 import clsx from 'clsx';
-import { createStyles, Theme, withStyles, WithStyles } from '@material-ui/core/styles';
+import { createStyles, Theme, withStyles, WithStyles } from '@mui/material/styles';
 import { SnackbarContentProps } from '../index';
 
 const styles = (theme: Theme) => createStyles({
